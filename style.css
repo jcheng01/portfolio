@@ -3,6 +3,7 @@ h1 {
 	font-family: 'Roboto', sans-serif;
 }
 
+
 .robots {
 	display: flex; /*activates flex*/
 	flex-wrap: wrap;/*fits to display*/
@@ -30,15 +31,15 @@ h1 {
 	height: 150px; 
 	border-radius: 200px 200px 0 0; 
 	margin-bottom: 10px;
+	background-color: #5f93e8;
 	animation-name: rotate;
   	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-play-state: paused;
 } 
 @keyframes rotate {
-	from {background-color: red;}
+	from {background-color: #5f93e8;}
 	to {background-color: rgb(17, 0, 255);}
-	to {background-color: rgb(255, 0, 212);}
   }
 
 .eyes {
@@ -49,6 +50,9 @@ h1 {
 	width: 300px;
     transition: 1s ease-in-out;
 	animation-play-state: running;
+
+	animation: wobble; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s;
 }
 
 .upper_body { 
@@ -68,18 +72,34 @@ h1 {
 } 
 
 .left_arm:hover {
-    transform: rotate(30deg);
+    animation-iteration-count: infinite;
+	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s;
 }
 
 .right_arm { 
 	margin-left: 10px; 
 } 
 
+.right_arm:hover {
+    animation-iteration-count: infinite;
+	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s;
+}
+
 .torso { 
 	width: 200px; 
 	height: 200px;
 	border-radius: 0 0 50px 50px; 
-} 
+}
+
+.torso:hover {
+	display: inline-block;
+	
+
+	animation: swing; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 5s;
+}
 
 .lower_body { 
 	width: 200px; 
@@ -100,7 +120,8 @@ h1 {
 } 
 
 .left_leg:hover {
-    transform: rotate(20deg);
+    animation: swing; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s;;
 }
 
 .right_leg { 
@@ -109,8 +130,8 @@ h1 {
 }
 
 .right_leg:hover {
-    transform: rotate(20deg);
-}
+	animation: swing; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 1s;;}
 
 .left_eye, .right_eye { 
 	width: 20px; 
