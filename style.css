@@ -8,6 +8,8 @@ h1 {
 	display: flex; /*activates flex*/
 	flex-wrap: wrap;/*fits to display*/
 	justify-content: center;
+	opacity: 50
+	;
 }
 
 .home-container{
@@ -22,7 +24,7 @@ h1 {
 .right_arm, 
 .left_leg, 
 .right_leg {
-	 background-color: #5f93e8;
+	 background-color: #000000;
 }
 
 .head { 
@@ -31,17 +33,12 @@ h1 {
 	height: 150px; 
 	border-radius: 200px 200px 0 0; 
 	margin-bottom: 10px;
-	background-color: #5f93e8;
+	
 	animation-name: rotate;
   	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-play-state: paused;
 } 
-@keyframes rotate {
-	from {background-color: #5f93e8;}
-	to {background-color: rgb(17, 0, 255);}
-  }
-
 .eyes {
 	display: flex
 }
@@ -72,8 +69,8 @@ h1 {
 } 
 
 .left_arm:hover {
-    animation-iteration-count: infinite;
 	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+	animation-iteration-count: infinite;
 	animation-duration: 1s;
 }
 
@@ -82,8 +79,8 @@ h1 {
 } 
 
 .right_arm:hover {
-    animation-iteration-count: infinite;
 	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+	animation-iteration-count: infinite;
 	animation-duration: 1s;
 }
 
@@ -95,15 +92,14 @@ h1 {
 
 .torso:hover {
 	display: inline-block;
-	
-
 	animation: swing; /* referring directly to the animation's @keyframe declaration */
-	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
 }
 
 .lower_body { 
 	width: 200px; 
-	height: 200px;
+	height: 150px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
 	display: flex; 
@@ -121,7 +117,8 @@ h1 {
 
 .left_leg:hover {
     animation: swing; /* referring directly to the animation's @keyframe declaration */
-	animation-duration: 1s;;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
 }
 
 .right_leg { 
@@ -131,7 +128,8 @@ h1 {
 
 .right_leg:hover {
 	animation: swing; /* referring directly to the animation's @keyframe declaration */
-	animation-duration: 1s;;}
+	animation-iteration-count: infinite;
+	animation-duration: 1s;}
 
 .left_eye, .right_eye { 
 	width: 20px; 
@@ -163,7 +161,34 @@ body {
 	color: black;
   }
   
-  .dark-mode {
+.dark-mode{
 	background-color: rgb(71, 72, 80);
 	color: white;
   }
+
+.dark-footer{
+	color: rgb(255, 255, 255);
+}
+.light-mode{
+	background-color: white;
+	color: rgb(71, 72, 80);
+}
+
+
+#color-theme{
+	text-align: center;
+}
+
+.robots {
+		display: inline-block;
+		margin: 0 0.5rem;
+		animation: pulse; /* referring directly to the animation's @keyframe declaration */
+		animation-duration: 3s; /* don't forget to set a duration! */
+		animation-iteration-count: infinite;
+		--animate-delay: 2s;
+	  }
+
+a.noUnderLine{
+	text-decoration:none;
+	color: inherit;
+}
