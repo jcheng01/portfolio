@@ -192,3 +192,26 @@ a.noUnderLine{
 	text-decoration:none;
 	color: inherit;
 }
+.box {
+	width: 230px;
+	margin: 50px auto;
+	background: #000000;
+	padding: 20px;
+	text-align: center;
+	font-weight: 900;
+	color: #000000;
+	font-family: arial;
+	position:relative;
+  }
+  .sb1:before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid #000000;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #000000;
+	border-bottom: 10px solid transparent;
+	right: -19px;
+	top: 6px;
+  }

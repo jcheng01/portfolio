@@ -22,16 +22,24 @@
 		  <ul class="nav nav-pills">
 			<li class="button is-dark"><a href="robohome.html" class="noUnderLine" aria-current="page">Home</a></li>
 			<li class="button is-white"><a href="about.html" class="noUnderLine">About</a></li>
+
 		  </ul>
 		</header>
 	</div>
 	<div class="home-container">
 		
-		<div>
-			<textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+	<div class="align-self-center">
+		<div class="box sb1">
+			<p class="talktext"><input type="text" id="field2"></p>
 		</div>
+		<div>
+			<input type="text" id="field1" value="Hello World!" class="button" ><br>
+			<input class="button is-link" type="submit" value="Submit robot voice" onclick="text()">
+		</div>
+	</div>
+	
 
-		<div class="robots" >
+		<div class="robots">
 			<div class="android"> 
 				<div class="head" id="headColor"> 
 					<div class="eyes"> 
@@ -51,6 +59,7 @@
 			</div>
 		</div>
 		<div class="align-self-center">
+			<br>
 			<div class="d-grid gap-2 d-md-flex justify-content-center">
 				<input type="text" class="input is-small" id="colorInputText" placeholder="change rgb/hex color">
 				<input type="color" id="colorInputColor">
@@ -63,13 +72,9 @@
 	</div>
 
 	<div class="d-grid gap-2 d-md-flex justify-content-center">
-		<button class="button is-primary" onclick="dance()">Tada</button>
-		<button class="button is-link" onclick="stretch()">Stretch</button>
-		<button class="button is-success" onclick="stretch()">Stretch</button>
-	  </div><br>
-	  <div class="d-grid gap-2 d-md-flex d-flex justify-content-center">
-		<button class="button is-warning" onclick="slow()">Slow</button>
-		<button class="button is-danger" onclick="stop()">Stop</button>
+		<button class="button is-primary is-light" onclick="dance()">Dance Gig</button>
+		<button class="button is-success is-light" onclick="dangle()">Can't Hang</button>
+		<button class="button is-danger is-light" onclick="flip()">Let's Tango</button>
 	  </div>
 
 	<div class="container">
