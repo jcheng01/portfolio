@@ -6,32 +6,81 @@ function changeColor(){
     document.getElementById('torsoColor').style.backgroundColor = color;
     document.getElementById('llegColor').style.backgroundColor = color;
     document.getElementById('rlegColor').style.backgroundColor = color;
+    document.getElementById('rlegColor').style.color = color;
     document.getElementById('colorInputText').value = color;
 }
+function text(){
+    document.getElementById("field2").value = document.getElementById("field1").value;
+}
+
 function dance(){
-    const element = document.querySelector('.robots');
-    element.classList.add('animate__animated', 'animate__tada');
+   // We create a Promise and return it
+   new Promise((resolve) => {
+    const animationName = 'animate__jello';
+    const node = document.querySelector('.robots');
+
+    node.classList.add('animate__animated', 'animate__jello', 'animate__repeat-1');
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove('animate__animated', 'animate__jello');
+      resolve('Animation ended');
+    }
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+  });
 }
-function stretch(){
-    const element = document.querySelector('.robots');
-    element.classList.add('animate__animated', 'animate__rubberBand');
+
+function dangle(){
+     // We create a Promise and return it
+     new Promise((resolve) => {
+        const animationName = 'animate__hinge';
+        const node = document.querySelector('.robots');
+    
+        node.classList.add('animate__animated', 'animate__hinge', 'animate__repeat-1');
+    
+        // When the animation ends, we clean the classes and resolve the Promise
+        function handleAnimationEnd(event) {
+          event.stopPropagation();
+          node.classList.remove('animate__animated', 'animate__hinge');
+          resolve('Animation ended');
+        }
+        node.addEventListener('animationend', handleAnimationEnd, {once: true});
+      });
 }
-function stop(){
-    const element = document.querySelector('.robots');
-    element.classList.add('animate__animated', 'animate__fadeIn', 'animate__repeat-1');
+
+function flip(){
+    // We create a Promise and return it
+    new Promise((resolve) => {
+       const animationName = 'animate__flip';
+       const node = document.querySelector('.robots');
+   
+       node.classList.add('animate__animated', 'animate__flip', 'animate__repeat-1');
+   
+       // When the animation ends, we clean the classes and resolve the Promise
+       function handleAnimationEnd(event) {
+         event.stopPropagation();
+         node.classList.remove('animate__animated', 'animate__flip');
+         resolve('Animation ended');
+       }
+       node.addEventListener('animationend', handleAnimationEnd, {once: true});
+     });
 }
 
 
 
-function darkMode() {
-    var element = document.body;
-    var content = document.getElementById("DarkModetext");
-    element.className = "dark-mode"; "dark-footer";
-    content.innerText = "Dark Mode is ON";
-  }
-  function lightMode() {
-    var element = document.body;
-    var content = document.getElementById("DarkModetext");
-    element.className = "light-mode";
-    content.innerText = "Dark Mode is OFF";
-  }
+
+
+WebFontConfig = {
+    google: { families: [ 'Montserrat::latin', 'Raleway::latin', 'Droid+Sans::latin', 'Poiret+One::latin', 'Dosis::latin', 'Oxygen::latin', 'Inconsolata::latin', 'Nunito::latin', 'Muli::latin', 'Cinzel::latin', 'Quicksand::latin', 'Maven+Pro::latin', 'Righteous::latin', 'Russo+One::latin', 'Comfortaa::latin', 'Coming+Soon::latin', 'Fredoka+One::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+
+
