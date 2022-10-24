@@ -1,0 +1,65 @@
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../abstracts/mixins";
+
+.projects{
+    clear: left;
+    padding-inline: 18%;
+    padding-block: 6rem;
+    .projectContainer{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 5rem;
+        .columnOne{
+            margin-right: 2rem;
+         
+            align-items: center;
+            hr{
+                margin: 0%;
+                margin-bottom: 5%;
+                display: block;
+                border-radius: .25rem;
+                border: 1px solid variables.$tealColor;
+            }
+            div{
+                padding-bottom: 2rem;
+            }
+            .title{
+                font-family: variables.$fontFamilyTwo;
+                font-size: 1.5rem;
+                color: variables.$lightGrey;
+            }
+            .description{
+                @include mixins.description;
+                background-color: #112240;
+                padding: 5%;
+                box-shadow: 2px 2px 2px #020c1b;;
+                box-sizing: border-box;
+                border-radius: .5rem;
+                transition-duration: 0.5s;
+                &:hover{
+                    box-shadow: 5px 5px 5px #020c1b;;
+                }
+            }
+            .buttonRow{
+                margin-top: 10%;
+                display: flex;
+                .buttonOne{
+                    a{
+                        @include mixins.button(.5rem,1rem);
+                    }
+                }
+                .buttonTwo{
+                    a{
+                        @include mixins.buttonTwo(.5rem,1rem);
+
+                    }
+                }
+            }
+            
+        }
+        .columnTwo{
+            
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../abstracts/mixins";
+
+.contact{ 
+    text-align: center;
+    padding-inline: 18%;
+    padding-bottom: 15%;
+    h1{
+        color: variables.$lightGrey;
+        font-size: 3rem;
+    }
+    p{
+        @include mixins.description;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; 
+        padding-bottom: 4%
+    }
+    .mailButton{
+        @include mixins.button(1rem, 2rem);
+    }
+}
+

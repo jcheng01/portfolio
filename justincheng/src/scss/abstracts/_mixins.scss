@@ -1,0 +1,118 @@
+@use "../abstracts/variables";
+
+@mixin buildFontProperties($font, $size, $color) {
+	font-family: $font;
+	font-size: $size;
+	color: $color;
+}
+@mixin gradient(){
+	background: -webkit-linear-gradient(variables.$tealColor, #0a192f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin button($ypadding, $xpadding){
+	color: variables.$tealColor;
+    border-style: solid;
+    border-radius: .5em;
+    padding: $ypadding $xpadding;
+    transition-duration: 0.5s;
+	text-decoration: none;
+	font-family: variables.$fontFamily;
+    &:hover{
+      background-color: #00d1b221; }
+}
+
+@mixin buttonTwo($ypadding, $xpadding){
+	color: variables.$textGrey;
+    padding: $ypadding $xpadding;
+    transition-duration: .5s;
+	text-decoration: none;
+	font-family: variables.$fontFamily;
+    &:hover{
+		color: variables.$tealColor;
+	}
+}
+
+@mixin description(){
+	font-size: 1.1rem;
+	font-family: variables.$fontFamilyThree;
+	font-weight: normal;
+	color: variables.$textGrey;
+	a{
+    	text-decoration: none;
+		display: inline-block;
+		position: relative;
+		color: variables.$tealColor;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			transform: scaleX(0);
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			background-color:  variables.$tealColor;
+			transform-origin: bottom right;
+			transition: transform .5s ease-out;
+			}
+		&:hover:after {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
+      }
+	span{
+		color: variables.$tealColor;
+	}
+}
+@mixin breakpoint($value) {
+	// need to validate $value
+
+	// if a string use standard breakpoints
+	@if type-of($value)=='string' {
+		@if ($value =="xs" or $value =="phone") {
+			@media (max-width: 699px) {
+				@content;
+			}
+		}
+
+		@else if ($value =="sm" or $value =="tablet") {
+			@media (min-width: 700px) {
+				@content;
+			}
+		}
+
+		@else if ($value =="md" or $value =="laptop") {
+			@media(min-width: 980px) {
+				@content;
+			}
+		}
+
+		@else if($value =="lg" or $value =="desktop") {
+			@media (min-width: 1140px) {
+				@content;
+			}
+		}
+
+		@else {
+			@warn "Breakpoint mixin supports: xs or phone, sm or tablet, md or laptop, lg or desktop, xl or tvscreen as string variables";
+		}
+
+	}
+
+	// if value then use value as minimum width.
+	@else if is-length($value) {
+		@media(min-width: #{$value}) {
+			@content;
+		}
+	}
+
+	@else {
+		@warn "Breakpoint mixin supports: string variables or relative units";
+	}
+
+	// if a length value than use that
+
+	// error warn if string does not match or it is not a length
+
+}

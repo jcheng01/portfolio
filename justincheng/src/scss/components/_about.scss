@@ -1,0 +1,39 @@
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../abstracts/mixins";
+
+
+.about{
+  padding-inline: 18%;
+  padding-block: 8rem;
+  .rowTwo{
+    display: flex;
+    .aboutDiscription{
+      @include mixins.description;
+      width: 60%;
+      ul{
+        columns: 2;
+        list-style-type: circle;
+        color: variables.$tealColor;
+        span{
+          color: variables.$textGrey;
+        }
+      }
+    }
+    .imgAbout{
+      max-width: auto;
+      margin: 5%;
+      padding: 9%;
+      border: solid 2px variables.$tealColor;
+      border-radius: 1rem;
+      transition-duration: 0.5s;
+      &:hover{
+        border-width: 5px;
+        background-color: #00d1b221;
+      }
+    }
+  }
+}
+.portrait{
+  margin-left: 90px;
+}

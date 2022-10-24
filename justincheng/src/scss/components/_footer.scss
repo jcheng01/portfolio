@@ -1,0 +1,19 @@
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../abstracts/mixins";
+
+footer{
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: variables.$fontFamily;
+    a{
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: variables.$textGrey;
+        transition-duration: 0.5s;
+        &:hover{
+            color: variables.$tealColor;
+        }
+    }
+  
+}

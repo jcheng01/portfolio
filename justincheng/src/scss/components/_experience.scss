@@ -1,0 +1,63 @@
+@use "../abstracts/variables"; 
+@use "../abstracts/mixins"; 
+
+
+.experience{
+  padding-inline: 18%;
+  padding-block: 7%;
+  font-family: variables.$fontFamily;
+
+  .rowOne{
+    text-align: center;
+  }
+  .tabs{
+    text-align: center;
+  }
+  .tab{
+    /* Style the tab */
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      background-color: #0a192f;
+    /* Style the buttons that are used to open the tab content */
+    button {
+      display: block;
+      background-color: inherit;
+      color: variables.$tealColor;
+      font-family: variables.$fontFamilyTwo;
+      padding: 2% 7%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover{
+        background-color: #112240;
+      }
+      &.active{
+        background-color: #112240;
+        border-top: .5rem solid variables.$tealColor;
+        
+      }
+    } 
+  }
+}
+.tabcontent {
+  transition: 0.3s;
+  color: variables.$textGrey;
+  font-family: variables.$fontFamilyTwo;
+  display: none;
+  padding: 6px 12px;
+  border: none;
+  box-sizing: border-box;
+  @include mixins.description;
+      ul{
+        font-weight: 300;
+        padding-inline: 10rem;
+        text-align: center;
+        list-style-type: circle;
+        color: variables.$tealColor;
+        span{
+          color: variables.$textGrey;
+        }
+}}

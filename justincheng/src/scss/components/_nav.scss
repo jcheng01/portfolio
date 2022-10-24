@@ -1,0 +1,55 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.navBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: variables.$fontFamily;
+    align-items: center;
+    padding: 1.8%;
+    padding-bottom: 0%;
+    margin-left: 1.4%;
+    .navLogo{
+        display: flex;
+        align-items: center;
+    }
+    .hamburger{
+        display: none;
+        @include mixins.breakpoint(phone){
+            display: block;   
+        }
+    }
+    .hamburgerItem{
+        display: none;
+    }
+    .navBarEnd{
+        display: flex;
+        align-items: center;
+        margin-right: 2rem;
+        .navItem{
+            cursor: pointer;
+            display: flex;
+            justify-content: space-evenly;
+            text-decoration: none;
+            font-family: variables.$fontFamily;
+            padding-right: 2rem;
+            font-size: 80%;
+            color: variables.$lightGrey;
+            justify-content: space-evenly;
+            transition-duration: 0.5s;
+            &:hover{
+                color: variables.$tealColor;
+            }
+            span{
+                color: variables.$tealColor;
+            }
+        }
+        .resumeButton{
+            @include mixins.button(.6rem, 1rem)
+        }
+        @include mixins.breakpoint(phone){
+            display: none;
+        }
+    }
+}

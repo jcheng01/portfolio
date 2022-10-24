@@ -1,0 +1,20 @@
+@use "../abstracts/variables";
+
+
+h1{
+    font-family: variables.$fontFamilyTwo;
+    font-size: 4.5em;
+    margin: 0;
+}
+h2{
+    font-family: variables.$fontFamily;
+    color: variables.$lightGrey;
+    font-size: 1.8rem;
+    font-weight: normal;
+    span{
+        color: variables.$tealColor;
+        font-size: 70%;
+        font-weight: lighter;
+    }
+}
+
