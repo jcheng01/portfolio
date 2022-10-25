@@ -1,2 +1,0 @@
-# Loading my student portfolio!
-
