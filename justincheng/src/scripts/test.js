@@ -15,7 +15,7 @@ function scrollExperience() {
     e.scrollIntoView({
       block: 'end',
       behavior: 'smooth',
-      inline: 'center'
+      inline: 'nearest'
     });
 }
 function scrollProjects() {
