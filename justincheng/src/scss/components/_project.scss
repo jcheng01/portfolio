@@ -3,6 +3,16 @@
 @use "../abstracts/mixins";
 
 .projects{
+    @include mixins.breakpoint(phone){
+        padding-block: 2rem;
+        padding-inline: 2rem; 
+        .rowOne{
+          font-size: 100%;
+        }
+        .projectContainer{
+          display: flex;
+          flex-direction: column;
+    }
     clear: left;
     padding-inline: 18%;
     padding-block: 6rem;
@@ -62,4 +72,4 @@
             
         }
     }
-}
+}}

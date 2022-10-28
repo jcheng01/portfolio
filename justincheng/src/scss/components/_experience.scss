@@ -3,10 +3,21 @@
 
 
 .experience{
+  @include mixins.breakpoint(phone){
+    padding-block: 2rem;
+    padding-inline: 2rem; 
+    font-size: 50%;
+    .rowOne{
+      text-align: center;
+      font-size: 20%;
+    }
+    .tabcontent{
+      font-size: 50%;
+    }
+  }
   padding-inline: 18%;
   padding-block: 7%;
   font-family: variables.$fontFamily;
-
   .rowOne{
     text-align: center;
   }
@@ -47,14 +58,14 @@
   color: variables.$textGrey;
   font-family: variables.$fontFamilyTwo;
   display: none;
-  padding: 6px 12px;
+  
   border: none;
   box-sizing: border-box;
   @include mixins.description;
       ul{
         font-weight: 300;
         padding-inline: 10rem;
-        text-align: center;
+        text-align: left;
         list-style-type: circle;
         color: variables.$tealColor;
         span{

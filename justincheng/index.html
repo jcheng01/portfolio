@@ -1,145 +1,187 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Justin Cheng</title> 
-    <link rel="shortcut icon" type="image/x-icon" href="./src/assets/favicon-32x32.png" />
-    <link rel="stylesheet" href="input.css">
-  </head>
-  <body>
-    <header class="">
-      <nav class="navBar">
-        <div class="navLogo">
-          <a href="index.html">
-            <img src="./src/assets/apple-touch-icon.png" class="logo animate__animated animate__fadeInDown animate__delay-1s "height="45"> 
-          </a>
-        </div>
-        <div class="navBarEnd animate__animated animate__fadeInDown animate__delay-1s ">
-          <a onclick="scrollAbout()" class="navItem"><span>01.</span>About</a>
-          <a onclick="scrollExperience()"class="navItem "><span>02.</span>Experience</a>
-          <a onclick="scrollProjects()"class="navItem "><span>03.</span>Projects</a>
-          <a onclick="scrollContact()"class="navItem "><span>04.</span>Contact</a>
-          <a href="./src/assets/cheng.resume.pdf" target=”_blank” class="resumeButton navItem">Resume</a>
-        </div>
-        <button class="hamburger hamburger--collapse" onclick="toggleNav();" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner menuItem">
-              <a class="hamburgerItem" ><span>01.</span>About</a>
-              <a href="" class="hamburgerItem "><span>02.</span>Experience</a>
-              <a href="" class="hamburgerItem "><span>03.</span>Projects</a>
-              <a href="" class="hamburgerItem "><span>04.</span>Contact</a>
-              <a href="./src/assets/cheng.resume.pdf" target=”_blank” class="resumeButton navItem">Resume</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justin Cheng</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./src/assets/favicon-32x32.png" />
+  <link rel="stylesheet" href="./src/scss/input.css">
+</head>
+
+<body>
+  <header class="">
+    <nav class="navBar">
+      <div class="navLogo">
+        <a href="index.html">
+          <img src="./src/assets/apple-touch-icon.png"
+            class="logo animate__animated animate__fadeInDown animate__delay-1s " height="45">
+        </a>
+      </div>
+      <div class="">
+        <nav class="mobileNav">
+          <button class="hamburger hamburger--collapse " type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner menuItem"></span>
             </span>
+          </button>
+          <a onclick="scrollAbout()" class="navItem hamburgerItem"><span>01.</span>About</a>
+          <a onclick="scrollExperience()" class="navItem hamburgerItem "><span>02.</span>Experience</a>
+          <a onclick="scrollProjects()" class="navItem hamburgerItem "><span>03.</span>Projects</a>
+          <a onclick="scrollContact()" class="navItem hamburgerItem "><span>04.</span>Contact</a>
+          <a href="./src/assets/cheng.resume.pdf" target=”_blank” class="resumeButton navItem">Resume</a>
+        </nav>
+      </div>
+      <div class="navBarEnd animate__animated animate__fadeInDown animate__delay-1s ">
+        <a onclick="scrollAbout()" class="navItem "><span>01.</span>About</a>
+        <a onclick="scrollExperience()" class="navItem  "><span>02.</span>Experience</a>
+        <a onclick="scrollProjects()" class="navItem  "><span>03.</span>Projects</a>
+        <a onclick="scrollContact()" class="navItem  "><span>04.</span>Contact</a>
+        <a href="./src/assets/cheng.resume.pdf" target=”_blank” class="resumeButton navItem">Resume</a>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="hero">
+      <div class="nameIs animate__animated animate__fadeIn animate__delay-1s">Hi, my name is</div>
+      <div>
+        <h1 class="firstTitle animate__animated animate__slideInLeft">Justin Cheng.</h1>
+      </div>
+      <div>
+        <h1 class="secondaryTitle animate__animated animate__slideInLeft">Student Developer.</h1>
+      </div>
+      <div class="heroDescription animate__animated animate__fadeIn animate__delay-1s">
+        <h6>I am a third year student at <a href="https://ischool.syr.edu/" target=”_blank”><span>Syracuse
+              University</span></a> studying Information Management & Technology with a concentration in front in
+          develpment. Curently building applications for my portfolio to hone skills for future opportunities</h6>
+      </div>
+      <div class="animate__animated animate__fadeIn animate__delay-1s"><a href="./src/assets/cheng.resume.pdf"
+          target=”_blank class="resumeButton navItem">Resume</a></div>
+    </section>
+    <section class="about" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250" id="aboutSection">
+      <h2 class="rowOne"><span>01.</span>About Me</h2>
+      <div class="rowTwo">
+        <div class="aboutDiscription">
+          <P>Hello, My name is Justin and I enjoy creating modern pages for the web. My interest in web development
+            started this year when I decided to try an intro class to front end development. Since then I have been
+            exposed to vast libraries and framworks. I am continually experimenting with ways to make
+          </P>
+          <P>I am continually experimenting with ways to make modern web pages fast productively. I have had the
+            privalige to work in serveral professional environments with my current position being a <span><a
+                href="https://www.linkedin.com/in/chengjustin0222/" target=”_blank”>Student Technology
+                Consultant</a></span>. My current focus is to continue this passion and build up a pratical web
+            portfolio I can be proud of.
+          </P>
+          <P>Here are a few technologies I have been working with recently
+          </P>
+          <p>
+          <ul class="aboutSkill">
+            <li><span>ES6 JavaScript</span></li>
+            <li><span>React</span></li>
+            <li><span>Node.js</span></li>
+            <li><span>PHP</span></li>
+            <li><span>Git</span></li>
+            <li><span>HTML5/SCSS</span></li>
+          </ul>
+          </p>
+        </div>
+        <div class="portrait">
+          <img src="./src/assets/pfp.jpg" alt="portait" width="200px" class="imgAbout" data-tilt>
+        </div>
+      </div>
+    </section>
+    <section class="experience" id="experienceSection" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250"
+      id="aboutSection">
+      <div class="rowOne">
+        <h2><span>02.</span>Experience</h2>
+      </div>
+      <div class="tabs">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'iSchool')">SU - iSchool</button>
+          <button class="tablinks" onclick="openCity(event, 'rrm')">Rapid Response Monitoring</button>
+          <button class="tablinks" onclick="openCity(event, 'barnes')">Syracuse University</button>
+        </div>
+        <div id="iSchool" class="tabcontent">
+          <h3>Student Technology Consultant</h3><span>
+            <h3>@Syracuse University - iSchool</h3>
           </span>
-        </button>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="nameIs animate__animated animate__fadeIn animate__delay-1s">Hi, my name is</div>
-        <div><h1 class="firstTitle animate__animated animate__slideInLeft">Justin Cheng.</h1></div>
-        <div><h1 class="secondaryTitle animate__animated animate__slideInLeft">Student Developer.</h1></div>
-        <div class="heroDescription animate__animated animate__fadeIn animate__delay-1s"><h6>I am a third year student at <a href="https://ischool.syr.edu/" target=”_blank”><span>Syracuse University</span></a> studying Information Management & Technology with a concentration in front in develpment. Curently building applications for my portfolio to hone skills for future opportunities</h6></div>
-        <div class="animate__animated animate__fadeIn animate__delay-1s"><a href="./src/assets/cheng.resume.pdf" target=”_blank class="resumeButton navItem">Resume</a></div>
-      </section>
-      <section class="about" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" id="aboutSection">
-        <h2 class="rowOne"><span>01.</span>About Me</h2>
-        <div class="rowTwo">
-          <div div class="aboutDiscription">
-            <P>Hello, My name is Justin and I enjoy creating modern pages for the web. My interest in web development started this year when I decided to try an intro class to front end development. Since then I have been exposed to vast libraries and framworks. I am continually experimenting with ways to make 
-            </P>
-            <P>I am continually experimenting with ways to make modern web pages fast productively. I have had the privalige to work in serveral professional environments with my current position being a <span><a href="https://www.linkedin.com/in/chengjustin0222/" target=”_blank”>Student Technology Consultant</a></span>. My current focus is to continue this passion and build up a pratical web portfolio I can be proud of.
-            </P>
-            <P>Here are a few technologies I have been working with recently
-            </P>
-            <p>
-              <ul class="aboutSkill">
-                <li><span>ES6 JavaScript</span></li>
-                <li><span>React</span></li>
-                <li><span>Node.js</span></li>
-                <li><span>PHP</span></li>
-                <li><span>Git</span></li>
-                <li><span>HTML5/SCSS</span></li>
-              </ul>
-            </p>
-          </div>
-          <div class="portrait">
-            <img src="./src/assets/pfp.jpg" alt="portait" width="200px" class="imgAbout" data-tilt>
-          </div>
-        </div>
-      </section>
-      <section class="experience" id="experienceSection" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" id="aboutSection">
-        <div class="rowOne">
-          <h2><span>02.</span>Experience</h2>
-        </div>
-        <div class="tabs">
-          <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'iSchool')">SU - iSchool</button>
-            <button class="tablinks" onclick="openCity(event, 'rrm')">Rapid Response Monitoring</button>
-            <button class="tablinks" onclick="openCity(event, 'barnes')">Syracuse University</button>
-          </div>
-          <div id="iSchool" class="tabcontent">
-            <h3>Student Technology Consultant</h3><span><h3>@Syracuse University - iSchool</h3></span>
-            <ul>
-              <li><span>Collaborate with other IT department staff to resolve customer inquiries and ensure quality support at a rate of 100%</span></li>
-              <li><span>Effectively troubleshoote enterprise WIFI and remote desktop server issues while servicing 10+ clients weekly</span></li>
-              <li><span>Trained in iSchool technology help desk resources, policies, and services to provide technical support over the phone and in
+          <ul>
+            <li><span>Collaborate with other IT department staff to resolve customer inquiries and ensure quality
+                support at a rate of 100%</span></li>
+            <li><span>Effectively troubleshoote enterprise WIFI and remote desktop server issues while servicing 10+
+                clients weekly</span></li>
+            <li><span>Trained in iSchool technology help desk resources, policies, and services to provide technical
+                support over the phone and in
                 person, and maintaining the smooth operation of the iSchool facilities</span></li>
-            </ul>
-          </div>
-          <div id="rrm" class="tabcontent">
-            <h3>Operations Customer Specialist</h3><span><h3>@Rapid Response Monitoring</h3></span>
-            <ul>
-              <li><span>Trained in utilizing several alarm monitoring software required for processing alarms activations across the country </li>
-              <li><span>Processed alarms for in/outbound calls from customers and authority agencies with a quality assurance rate of at least 85%</li>
-              <li><span>Provide detail-oriented customer service and empathetic support with a sense of urgency </li>
-            </ul>
-          </div>
-          <div id="barnes" class="tabcontent">
-            <h3>Front Desk Receptionist</h3><span><h3>@Syracuse University</h3></span>
-            <ul>
-              <li><span>Provided excellent patron service, effectively maintaining a 99% satisfaction rate</span></li>
-              <li><span>Answered Queries on wide-ranging service concerns utilizing facility virtual catalog</span></li>
-            </ul>
-          </div>
+          </ul>
         </div>
-      </section> 
-      <section class="projects" id="projectsSection" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" id="aboutSection">
-        <div>
-          <h2><span>03.</span>Projects I built</h2>
+        <div id="rrm" class="tabcontent">
+          <h3>Operations Customer Specialist</h3><span>
+            <h3>@Rapid Response Monitoring</h3>
+          </span>
+          <ul>
+            <li><span>Trained in utilizing several alarm monitoring software required for processing alarms activations
+                across the country </li>
+            <li><span>Processed alarms for in/outbound calls from customers and authority agencies with a quality
+                assurance rate of at least 85%</li>
+            <li><span>Provide detail-oriented customer service and empathetic support with a sense of urgency </li>
+          </ul>
         </div>
-        <div class="projectContainer">
-          <div class="columnOne">
-            <hr>
-            <div class="title">Robot Friend</div>
-            <div class="description">Created personal interactive animated "robot friend" project demonstrating CSS flexbox grid, animations, and vanilla JavaScript</div>
-            <div class="buttonRow">
-              <div class="buttonOne">
-                <a href="https://jcheng01.github.io/portfolio/justincheng/projects/robofriend/robohome.html" target=”_blank”>See live</a>
-              </div>
-              <div class="buttonTwo" >
-                <a href="https://github.com/jcheng01/portfolio/tree/main/justincheng/projects/robofriend" target=”_blank”>Source Code</a>
-              </div>
+        <div id="barnes" class="tabcontent">
+          <h3>Front Desk Receptionist</h3><span>
+            <h3>@Syracuse University</h3>
+          </span>
+          <ul>
+            <li><span>Provided excellent patron service, effectively maintaining a 99% satisfaction rate</span></li>
+            <li><span>Answered Queries on wide-ranging service concerns utilizing facility virtual catalog</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projectsSection" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250"
+      id="aboutSection">
+      <div class="rowOne">
+        <h2><span>03.</span>Projects I built</h2>
+      </div>
+      <div class="projectContainer">
+        <div class="columnOne">
+          <hr>
+          <div class="title">Robot Friend</div>
+          <div class="description">Created personal interactive animated "robot friend" project demonstrating CSS
+            flexbox grid, animations, and vanilla JavaScript</div>
+          <div class="buttonRow">
+            <div class="buttonOne">
+              <a href="https://jcheng01.github.io/portfolio/justincheng/projects/robofriend/robohome.html"
+                target=”_blank”>See live</a>
+            </div>
+            <div class="buttonTwo" onmouseover="animate();">
+              <a href="https://github.com/jcheng01/portfolio/tree/main/justincheng/projects/robofriend"
+                target=”_blank”>Source Code</a>
             </div>
           </div>
-          <div class="columnTwo">
-            <img src="./src/assets/projectbanner.png" alt="project thumbnail" height="300" data-tilt data-tilt-axis="x">
-          </div>
         </div>
-      </section>
-      <section class="contact" data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" id="aboutSection">
-        <h2><span>04. Dont be Shy</span></h2>
-        <h1>Keep In Touch</h1>
-        <p>Currently open for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-        <a href="mailto:chengjustin24@gmail.com" class="mailButton" target=”_blank”>Send Email</a>
-      </section>
-      <footer id="endSection">
-        <div><a href="https://github.com/jcheng01/portfolio" target=”_blank”><h6>Built by Justin Cheng</h6></a></div>
-        <div></div>
-      </footer>
-      <script type="text/javascript" src="./dist/main.js"></script>
-      <script type="text/javascript" src="./src/scripts/test.js"></script>
-    </main>
+        <div class="columnTwo">
+          <img src="./src/assets/projectbanner.png" alt="project thumbnail" height="250" data-tilt data-tilt-axis="x">
+        </div>
+      </div>
+    </section>
+    <section class="contact" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250" id="aboutSection">
+      <h2><span>04. Dont be Shy</span></h2>
+      <h1>Keep In Touch</h1>
+      <p>Currently open for any new opportunities, my inbox is always open. Whether you have a question or just want to
+        say hi, I’ll try my best to get back to you!</p>
+      <a href="mailto:chengjustin24@gmail.com" class="mailButton" target=”_blank”>Send Email</a>
+    </section>
+    <footer id="endSection">
+      <div><a href="https://github.com/jcheng01/portfolio" target=”_blank”>
+          <h6>Built by Justin Cheng</h6>
+        </a></div>
+      <div></div>
+    </footer>
+    <script type="text/javascript" src="./dist/main.js"></script>
+    <script type="text/javascript" src="./src/scripts/test.js"></script>
+  </main>
 </body>
+
 </html>

@@ -3,9 +3,10 @@
 @use "../base/typography";
 
 .hero{
-    padding-block: 6.5rem;
+    padding-block: 5rem;
     padding-inline: 13rem;
-    .nameIs{      color: variables.$tealColor;
+    .nameIs{      
+      color: variables.$tealColor;
       font-family: variables.$fontFamily;
     }
     h1{
@@ -29,6 +30,15 @@
     .resumeButton{
       @include mixins.button (1.2rem, 5rem);
       width: 50%;
+    }
+    @include mixins.breakpoint(phone){
+      padding-block: 2rem;
+      padding-inline: 2rem;   
+      font-size: 50%;
+      h6{
+        width: auto
+        ;
+      }
     }
   }
 

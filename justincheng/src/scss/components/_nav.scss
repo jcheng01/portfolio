@@ -3,25 +3,11 @@
 
 .navBar{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    font-family: variables.$fontFamily;
     align-items: center;
+    font-family: variables.$fontFamily;
     padding: 1.8%;
-    padding-bottom: 0%;
     margin-left: 1.4%;
-    .navLogo{
-        display: flex;
-        align-items: center;
-    }
-    .hamburger{
-        display: none;
-        @include mixins.breakpoint(phone){
-            display: block;   
-        }
-    }
-    .hamburgerItem{
-        display: none;
     }
     .navBarEnd{
         display: flex;
@@ -29,15 +15,47 @@
         margin-right: 2rem;
         .navItem{
             cursor: pointer;
-            display: flex;
-            justify-content: space-evenly;
             text-decoration: none;
             font-family: variables.$fontFamily;
             padding-right: 2rem;
             font-size: 80%;
             color: variables.$lightGrey;
-            justify-content: space-evenly;
-            transition-duration: 0.5s;
+            transition-duration: .7s;
+            &:hover{
+                color: variables.$tealColor;
+            }
+            span{
+                color: variables.$tealColor;
+            }
+            @include mixins.breakpoint("phone"){
+                display: none;   
+            }
+        }
+        .resumeButton{
+            @include mixins.button(.6rem, 1rem)
+        }
+    }
+.overlay{
+    background-color: #112240 ;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 80vw;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .5s;
+    &.active {
+        right: 100;
+    }
+    &.mobileNav{
+        text-align: right;
+        .hamburgerItem{
+            text-align: center;
+            margin: 2rem;
+            font-size: 80%;
+            color: variables.$lightGrey;
+            transition-duration: .7s;
+            text-decoration: none;
             &:hover{
                 color: variables.$tealColor;
             }
@@ -45,11 +63,27 @@
                 color: variables.$tealColor;
             }
         }
-        .resumeButton{
-            @include mixins.button(.6rem, 1rem)
-        }
-        @include mixins.breakpoint(phone){
-            display: none;
-        }
+    }
+}
+.mobileNav{
+    display: none;
+    a{
+        display: none;
+        cursor: pointer;
+    }
+}
+.is-active{
+    display: block;
+    &.hamburgerItem{
+        display: block;
+    }
+}
+@include mixins.breakpoint("phone"){
+    .navBarEnd{
+        display: none;
+    }
+    .mobileNav{
+        display: block;
+        margin: 0;
     }
 }

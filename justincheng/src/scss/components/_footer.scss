@@ -15,5 +15,15 @@ footer{
             color: variables.$tealColor;
         }
     }
+}
+
+@include mixins.breakpoint(phone){
+    .contact{
+        font-size: 50%;
+       
   
+        padding-block: 2rem;
+        padding-inline: 2rem; 
+   
+    }
 }

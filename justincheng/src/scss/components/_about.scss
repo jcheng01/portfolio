@@ -4,13 +4,36 @@
 
 
 .about{
+  @include mixins.breakpoint(phone){
+    padding-block: 2rem;
+    padding-inline: 2rem; 
+    .rowOne{
+      font-size: 100%;
+    }
+    .rowTwo{
+      display: flex;
+      flex-direction: column;
+    }
+    .aboutDiscription{
+      p{
+        font-size: 70%;
+      }
+      ul{
+        font-size: 70%;
+        text-align: center;
+      }
+    }
+    .imgAbout{
+      width: 175px;
+    }
+  }
   padding-inline: 18%;
   padding-block: 8rem;
   .rowTwo{
     display: flex;
     .aboutDiscription{
       @include mixins.description;
-      width: 60%;
+      max-width: 540px;
       ul{
         columns: 2;
         list-style-type: circle;
@@ -33,6 +56,7 @@
       }
     }
   }
+  
 }
 .portrait{
   margin-left: 90px;
