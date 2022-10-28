@@ -3,6 +3,14 @@
 @use "../abstracts/mixins";
 
 footer{
+    @include mixins.breakpoint(phone){
+        .contact{
+            font-size: 50%;
+            padding-block: 2rem;
+            padding-inline: 2rem; 
+       
+        }
+    }
     padding-bottom: 5px;
     text-align: center;
     font-family: variables.$fontFamily;
@@ -17,13 +25,3 @@ footer{
     }
 }
 
-@include mixins.breakpoint(phone){
-    .contact{
-        font-size: 50%;
-       
-  
-        padding-block: 2rem;
-        padding-inline: 2rem; 
-   
-    }
-}

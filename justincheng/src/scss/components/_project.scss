@@ -6,13 +6,15 @@
     @include mixins.breakpoint(phone){
         padding-block: 2rem;
         padding-inline: 2rem; 
-        .rowOne{
-          font-size: 100%;
-        }
+        font-size: 50%;
+        
         .projectContainer{
-          display: flex;
-          flex-direction: column;
+            display: flex;
+            flex-direction: column;
+        }
     }
+
+    
     clear: left;
     padding-inline: 18%;
     padding-block: 6rem;
@@ -72,4 +74,4 @@
             
         }
     }
-}}
+}

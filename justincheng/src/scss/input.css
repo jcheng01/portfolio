@@ -454,117 +454,123 @@ h2 span {
   background-color: rgba(0, 209, 178, 0.1294117647);
 }
 
+.projects {
+  clear: left;
+  padding-inline: 18%;
+  padding-block: 6rem;
+}
 @media (max-width: 699px) {
   .projects {
     padding-block: 2rem;
     padding-inline: 2rem;
-    clear: left;
-    padding-inline: 18%;
-    padding-block: 6rem;
-  }
-  .projects .rowOne {
-    font-size: 100%;
+    font-size: 50%;
   }
   .projects .projectContainer {
     display: flex;
     flex-direction: column;
   }
-  .projects .projectContainer {
-    display: flex;
-    justify-content: space-between;
-    padding-block: 5rem;
-  }
-  .projects .projectContainer .columnOne {
-    margin-right: 2rem;
-    align-items: center;
-  }
-  .projects .projectContainer .columnOne hr {
-    margin: 0%;
-    margin-bottom: 5%;
-    display: block;
-    border-radius: 0.25rem;
-    border: 1px solid #00D1B2;
-  }
-  .projects .projectContainer .columnOne div {
-    padding-bottom: 2rem;
-  }
-  .projects .projectContainer .columnOne .title {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
-    color: #ccd6f6;
-  }
-  .projects .projectContainer .columnOne .description {
-    font-size: 1.1rem;
-    font-family: "lato";
-    font-weight: normal;
-    color: #717f9c;
-    background-color: #112240;
-    padding: 5%;
-    box-shadow: 2px 2px 2px #020c1b;
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-    transition-duration: 0.5s;
-  }
-  .projects .projectContainer .columnOne .description a {
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    color: #00D1B2;
-  }
-  .projects .projectContainer .columnOne .description a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #00D1B2;
-    transform-origin: bottom right;
-    transition: transform 0.5s ease-out;
-  }
-  .projects .projectContainer .columnOne .description a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  .projects .projectContainer .columnOne .description span {
-    color: #00D1B2;
-  }
-  .projects .projectContainer .columnOne .description:hover {
-    box-shadow: 5px 5px 5px #020c1b;
-  }
-  .projects .projectContainer .columnOne .buttonRow {
-    margin-top: 10%;
-    display: flex;
-  }
-  .projects .projectContainer .columnOne .buttonRow .buttonOne a {
-    color: #00D1B2;
-    border-style: solid;
-    border-radius: 0.5em;
-    padding: 0.5rem 1rem;
-    transition-duration: 0.5s;
-    text-decoration: none;
-    font-family: "Roboto Mono", monospace;
-  }
-  .projects .projectContainer .columnOne .buttonRow .buttonOne a:hover {
-    background-color: rgba(0, 209, 178, 0.1294117647);
-  }
-  .projects .projectContainer .columnOne .buttonRow .buttonTwo a {
-    color: #717f9c;
-    padding: 0.5rem 1rem;
-    transition-duration: 0.5s;
-    text-decoration: none;
-    font-family: "Roboto Mono", monospace;
-  }
-  .projects .projectContainer .columnOne .buttonRow .buttonTwo a:hover {
-    color: #00D1B2;
-  }
 }
-
+.projects .projectContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 5rem;
+}
+.projects .projectContainer .columnOne {
+  margin-right: 2rem;
+  align-items: center;
+}
+.projects .projectContainer .columnOne hr {
+  margin: 0%;
+  margin-bottom: 5%;
+  display: block;
+  border-radius: 0.25rem;
+  border: 1px solid #00D1B2;
+}
+.projects .projectContainer .columnOne div {
+  padding-bottom: 2rem;
+}
+.projects .projectContainer .columnOne .title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: #ccd6f6;
+}
+.projects .projectContainer .columnOne .description {
+  font-size: 1.1rem;
+  font-family: "lato";
+  font-weight: normal;
+  color: #717f9c;
+  background-color: #112240;
+  padding: 5%;
+  box-shadow: 2px 2px 2px #020c1b;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  transition-duration: 0.5s;
+}
+.projects .projectContainer .columnOne .description a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #00D1B2;
+}
+.projects .projectContainer .columnOne .description a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #00D1B2;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.projects .projectContainer .columnOne .description a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.projects .projectContainer .columnOne .description span {
+  color: #00D1B2;
+}
+.projects .projectContainer .columnOne .description:hover {
+  box-shadow: 5px 5px 5px #020c1b;
+}
+.projects .projectContainer .columnOne .buttonRow {
+  margin-top: 10%;
+  display: flex;
+}
+.projects .projectContainer .columnOne .buttonRow .buttonOne a {
+  color: #00D1B2;
+  border-style: solid;
+  border-radius: 0.5em;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+.projects .projectContainer .columnOne .buttonRow .buttonOne a:hover {
+  background-color: rgba(0, 209, 178, 0.1294117647);
+}
+.projects .projectContainer .columnOne .buttonRow .buttonTwo a {
+  color: #717f9c;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
+.projects .projectContainer .columnOne .buttonRow .buttonTwo a:hover {
+  color: #00D1B2;
+}
 footer {
   padding-bottom: 5px;
   text-align: center;
   font-family: "Roboto Mono", monospace;
+}
+@media (max-width: 699px) {
+  footer .contact {
+    font-size: 50%;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+  }
 }
 footer a {
   text-decoration: none;
@@ -576,13 +582,6 @@ footer a:hover {
   color: #00D1B2;
 }
 
-@media (max-width: 699px) {
-  .contact {
-    font-size: 50%;
-    padding-block: 2rem;
-    padding-inline: 2rem;
-  }
-}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
