@@ -1,9 +1,15 @@
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../abstracts/mixins";
 html{
     font-size: 100%;
     overflow-x: hidden
   }
   @include mixins.breakpoint(phone){
-    overflow-x: hidden
+    html{
+      overflow-x: hidden
+    }
+    
   }
   body{
     margin: 0;
