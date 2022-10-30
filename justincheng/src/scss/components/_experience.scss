@@ -12,7 +12,7 @@
       font-size: 20%;
     }
     .tabcontent{
-      font-size: 50%;
+      font-size: 100%;
     }
   }
   padding-inline: 18%;
@@ -58,7 +58,6 @@
   color: variables.$textGrey;
   font-family: variables.$fontFamilyTwo;
   display: none;
-  
   border: none;
   box-sizing: border-box;
   @include mixins.description;

@@ -311,7 +311,7 @@ h2 span {
     font-size: 20%;
   }
   .experience .tabcontent {
-    font-size: 50%;
+    font-size: 100%;
   }
 }
 .experience .rowOne {
@@ -468,6 +468,10 @@ h2 span {
   .projects .projectContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+  .projects .columnTwo {
+    height: 100;
   }
 }
 .projects .projectContainer {
@@ -560,6 +564,7 @@ h2 span {
 .projects .projectContainer .columnOne .buttonRow .buttonTwo a:hover {
   color: #00D1B2;
 }
+
 footer {
   padding-bottom: 5px;
   text-align: center;
