@@ -401,6 +401,12 @@ h2 span {
   padding-inline: 18%;
   padding-bottom: 15%;
 }
+@media (max-width: 699px) {
+  .contact {
+    padding: 0;
+    margin: 0%;
+  }
+}
 .contact h1 {
   color: #ccd6f6;
   font-size: 3rem;
@@ -471,7 +477,7 @@ h2 span {
     justify-content: center;
   }
   .projects .columnTwo {
-    height: 100;
+    width: 1px;
   }
 }
 .projects .projectContainer {
