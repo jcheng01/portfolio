@@ -39,27 +39,23 @@ function scrollContact() {
   });
 }
 
-function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+let tabs = document.querySelectorAll(".tabs h3");
+let tabContent = document.querySelectorAll(".tabContent div");
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
 
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabContent.forEach((content) => {
+      content.classList.remove("active");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tabContent[index].classList.add("active");
+    tabs[index].classList.add("active");
+  });
+})
 
 const hamburgerItem = document.querySelectorAll('.hamburgerItem');
 const hamburger = document.querySelector('.hamburger');
@@ -76,3 +72,7 @@ hamburgerItem.addEventListener('click', () => {
   hamburger.classList.toggle('is-active');
 
 }, false);
+
+
+
+

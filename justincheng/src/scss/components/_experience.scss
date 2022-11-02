@@ -15,59 +15,83 @@
       font-size: 100%;
     }
   }
-  padding-inline: 18%;
+  padding-inline: 10%;
   padding-block: 7%;
   font-family: variables.$fontFamily;
   .rowOne{
     text-align: center;
   }
-  .tabs{
-    text-align: center;
-  }
-  .tab{
-    /* Style the tab */
-      display: flex;
-      flex-direction:row;
-      justify-content: center;
-      background-color: #0a192f;
-    /* Style the buttons that are used to open the tab content */
-    button {
-      display: block;
-      background-color: inherit;
-      color: variables.$tealColor;
-      font-family: variables.$fontFamilyTwo;
-      padding: 2% 7%;
-      border: none;
-      outline: none;
-      text-align: left;
-      cursor: pointer;
-      transition: 0.3s;
-      &:hover{
-        background-color: #112240;
-      }
-      &.active{
-        background-color: #112240;
-        border-top: .5rem solid variables.$tealColor;
-        
-      }
-    } 
+}
+  
+
+.container{
+  box-sizing: border-box;
+  background-color: inherit;
+  font-size: .5rem;
+  
+  min-width: 30em;
+  display: grid;
+  grid-template-columns: 2fr 9fr;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+}
+
+.tabs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: inherit;
+  h3{
+    padding: 1.5rem 3rem;
+    font-size: .70rem;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    width: 20rem;
+    &:hover{
+      background-color: #112240;
+    color: variables.$tealColor;
+    transition-duration: .5s;
+    border: left 5px;
+    }
   }
 }
-.tabcontent {
-  transition: 0.3s;
+.tabContent{
+  background-color: inherit;
+  padding: .5rem 1rem;
+}
+.tabContent h4{
+  font-size: 1rem;
+  padding-left: 1.8rem;
   color: variables.$textGrey;
-  font-family: variables.$fontFamilyTwo;
+  
+  span{
+    color: variables.$tealColor;
+  }
+}
+.tabContent ul{
+  text-align: justify;
+  color: variables.$textGrey;
+  li{
+    font-size: .85rem;
+    font-family: variables.$fontFamilyTwo;
+    color: variables.$tealColor;
+    list-style:circle ;
+  }
+  li span{
+    color: variables.$textGrey;
+  }
+}
+.tabContent div{
   display: none;
-  border: none;
-  box-sizing: border-box;
-  @include mixins.description;
-      ul{
-        font-weight: 300;
-        padding-inline: 10rem;
-        text-align: left;
-        list-style-type: circle;
-        color: variables.$tealColor;
-        span{
-          color: variables.$textGrey;
-        }
-}}
+}
+
+.tabContent .active{
+  display: block;
+}
+.tabs .active{
+  background-color: #112240;
+  color: variables.$tealColor;
+  border-left:5px solid variables.$tealColor ;
+}
+

@@ -45,7 +45,7 @@
     z-index: 1000;
     transition: all .5s;
     &.active {
-        right: 100;
+        right: 0;
     }
     &.mobileNav{
         text-align: right;

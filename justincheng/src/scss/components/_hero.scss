@@ -25,7 +25,7 @@
       @include mixins.description();
       width: 53%;
       padding-bottom: 2rem;
-      
+      line-height: 1.25;
     }
     .resumeButton{
       @include mixins.button (1.2rem, 5rem);

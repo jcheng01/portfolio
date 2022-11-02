@@ -7,6 +7,7 @@
   <title>Justin Cheng</title>
   <link rel="shortcut icon" type="image/x-icon" href="./src/assets/favicon-32x32.png" />
   <link rel="stylesheet" href="./src/scss/input.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -96,48 +97,62 @@
       <div class="rowOne">
         <h2><span>02.</span>Experience</h2>
       </div>
-      <div class="tabs">
-        <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'iSchool')">SU - iSchool</button>
-          <button class="tablinks" onclick="openCity(event, 'rrm')">Rapid Response Monitoring</button>
-          <button class="tablinks" onclick="openCity(event, 'barnes')">Syracuse University</button>
+
+      <div class="container">
+        <div class="tabs">
+          <h3 class="active">Syracuse University - iSchool</h3>
+          <h3>Rapid Response Monitoring</h3>
+          <h3>Syracuse University</h3>
         </div>
-        <div id="iSchool" class="tabcontent">
-          <h3>Student Technology Consultant</h3><span>
-            <h3>@Syracuse University - iSchool</h3>
-          </span>
-          <ul>
-            <li><span>Collaborate with other IT department staff to resolve customer inquiries and ensure quality
-                support at a rate of 100%</span></li>
-            <li><span>Effectively troubleshoote enterprise WIFI and remote desktop server issues while servicing 10+
-                clients weekly</span></li>
-            <li><span>Trained in iSchool technology help desk resources, policies, and services to provide technical
-                support over the phone and in
-                person, and maintaining the smooth operation of the iSchool facilities</span></li>
-          </ul>
-        </div>
-        <div id="rrm" class="tabcontent">
-          <h3>Operations Customer Specialist</h3><span>
-            <h3>@Rapid Response Monitoring</h3>
-          </span>
-          <ul>
-            <li><span>Trained in utilizing several alarm monitoring software required for processing alarms activations
-                across the country </li>
-            <li><span>Processed alarms for in/outbound calls from customers and authority agencies with a quality
-                assurance rate of at least 85%</li>
-            <li><span>Provide detail-oriented customer service and empathetic support with a sense of urgency </li>
-          </ul>
-        </div>
-        <div id="barnes" class="tabcontent">
-          <h3>Front Desk Receptionist</h3><span>
-            <h3>@Syracuse University</h3>
-          </span>
-          <ul>
-            <li><span>Provided excellent patron service, effectively maintaining a 99% satisfaction rate</span></li>
-            <li><span>Answered Queries on wide-ranging service concerns utilizing facility virtual catalog</span></li>
-          </ul>
+        <div class="tabContent">
+          <div class="active">
+            <h4>
+              Student Technology Consultant
+              <span>
+                @Syracuse University - iSchool
+              </span>
+            </h4>
+
+            <ul>
+              <li><span>Collaborate with other IT department staff to resolve customer inquiries and ensure quality
+                  support at a rate of 100%</span></li>
+              <li><span>Effectively troubleshoote enterprise WIFI and remote desktop server issues while servicing 10+
+                  clients weekly</span></li>
+              <li><span>Trained in iSchool technology help desk resources, policies, and services to provide technical
+                  support over the phone and in
+                  person, and maintaining the smooth operation of the iSchool facilities</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              Operations Customer Specialist<span>
+                @Rapid Response Monitoring
+              </span>
+            </h4>
+
+            <ul>
+              <li><span>Trained in utilizing several alarm monitoring software required for processing alarms
+                  activations
+                  across the country </li>
+              <li><span>Processed alarms for in/outbound calls from customers and authority agencies with a quality
+                  assurance rate of at least 85%</li>
+              <li><span>Provide detail-oriented customer service and empathetic support with a sense of urgency </li>
+            </ul>
+          </div>
+          <div>
+            <h4>
+              Front Desk Receptionist<span>
+                @Syracuse University
+              </span>
+            </h4>
+            <ul>
+              <li><span>Provided excellent patron service, effectively maintaining a 99% satisfaction rate</span></li>
+              <li><span>Answered Queries on wide-ranging service concerns utilizing facility virtual catalog</span></li>
+            </ul>
+          </div>
         </div>
       </div>
+
     </section>
     <section class="projects" id="projectsSection" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250"
       id="aboutSection">
@@ -169,8 +184,8 @@
     <section class="contact" data-aos="fade-up" data-aos-duration="500" data-aos-offset="250" id="aboutSection">
       <h2><span>04. Dont be Shy</span></h2>
       <h1>Keep In Touch</h1>
-      <p>Currently open for any new opportunities, my inbox is always open. Whether you have a question or just want to
-        say hi, I’ll try my best to get back to you!</p>
+      Currently open for any new opportunities, my inbox is always open. Whether you have a question or just want to
+      say hi, I’ll try my best to get back to you!</p>
       <a href="mailto:chengjustin24@gmail.com" class="mailButton" target=”_blank”>Send Email</a>
     </section>
     <footer id="endSection">
