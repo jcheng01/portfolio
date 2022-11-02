@@ -21,9 +21,13 @@
   .rowOne{
     text-align: center;
   }
+ 
 }
-  
-
+hr{
+  border-radius: .25rem;
+  margin-block: 3rem;
+  border: 1px solid variables.$tealColor;
+}
 .container{
   box-sizing: border-box;
   background-color: inherit;
@@ -31,7 +35,7 @@
   
   min-width: 30em;
   display: grid;
-  grid-template-columns: 2fr 9fr;
+  grid-template-columns: 2fr 7fr;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
 }
 
@@ -41,13 +45,15 @@
   justify-content: space-around;
   background-color: inherit;
   h3{
-    padding: 1.5rem 3rem;
-    font-size: .70rem;
+    padding: 1rem 1.5rem;
+    font-weight: normal;
+    font-size: .7rem;
+    color: variables.$textGrey;
     margin: 0;
+    
+    max-width: 200px;
     display: grid;
-    place-items: center;
     cursor: pointer;
-    width: 20rem;
     &:hover{
       background-color: #112240;
     color: variables.$tealColor;
@@ -55,6 +61,7 @@
     border: left 5px;
     }
   }
+  
 }
 .tabContent{
   background-color: inherit;
@@ -63,12 +70,19 @@
 .tabContent h4{
   font-size: 1rem;
   padding-left: 1.8rem;
-  color: variables.$textGrey;
-  
+  color: variables.$lightGrey;
+  margin: 0;
   span{
     color: variables.$tealColor;
   }
 }
+.tabContent h5{
+  color: variables.$textGrey;
+  font-size: .8rem;
+  padding-left: 1.8rem;
+  font-family: variables.$fontFamily;
+}
+
 .tabContent ul{
   text-align: justify;
   color: variables.$textGrey;
@@ -77,6 +91,9 @@
     font-family: variables.$fontFamilyTwo;
     color: variables.$tealColor;
     list-style:circle ;
+    word-spacing: 1px;
+    line-height: 25px;
+    
   }
   li span{
     color: variables.$textGrey;
@@ -92,7 +109,7 @@
 .tabs .active{
   background-color: #112240;
   color: variables.$tealColor;
-  border-left:5px solid variables.$tealColor ;
+  border-left:2px solid variables.$tealColor ;
 
 }
 

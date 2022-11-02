@@ -324,13 +324,19 @@ body {
   text-align: center;
 }
 
+hr {
+  border-radius: 0.25rem;
+  margin-block: 3rem;
+  border: 1px solid #00D1B2;
+}
+
 .container {
   box-sizing: border-box;
   background-color: inherit;
   font-size: 0.5rem;
   min-width: 30em;
   display: grid;
-  grid-template-columns: 2fr 9fr;
+  grid-template-columns: 2fr 7fr;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
@@ -341,13 +347,14 @@ body {
   background-color: inherit;
 }
 .tabs h3 {
-  padding: 1.5rem 3rem;
+  padding: 1rem 1.5rem;
+  font-weight: normal;
   font-size: 0.7rem;
+  color: #717f9c;
   margin: 0;
+  max-width: 200px;
   display: grid;
-  place-items: center;
   cursor: pointer;
-  width: 20rem;
 }
 .tabs h3:hover {
   background-color: #112240;
@@ -364,10 +371,18 @@ body {
 .tabContent h4 {
   font-size: 1rem;
   padding-left: 1.8rem;
-  color: #717f9c;
+  color: #ccd6f6;
+  margin: 0;
 }
 .tabContent h4 span {
   color: #00D1B2;
+}
+
+.tabContent h5 {
+  color: #717f9c;
+  font-size: 0.8rem;
+  padding-left: 1.8rem;
+  font-family: "Roboto Mono", monospace;
 }
 
 .tabContent ul {
@@ -379,6 +394,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #00D1B2;
   list-style: circle;
+  word-spacing: 1px;
+  line-height: 25px;
 }
 .tabContent ul li span {
   color: #717f9c;
@@ -395,7 +412,7 @@ body {
 .tabs .active {
   background-color: #112240;
   color: #00D1B2;
-  border-left: 5px solid #00D1B2;
+  border-left: 2px solid #00D1B2;
 }
 
 .contact {
