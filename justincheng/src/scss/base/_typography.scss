@@ -3,8 +3,6 @@
 
 h1{
     font-family: variables.$fontFamilyTwo;
-    font-size: 4.5em;
-    margin: 0;
 }
 h2{
     font-family: variables.$fontFamily;
@@ -16,5 +14,9 @@ h2{
         font-size: 70%;
         font-weight: lighter;
     }
+}
+hr{
+    border: 1px solid variables.$tealColor;
+    border-radius: .25rem;
 }
 

@@ -12,15 +12,10 @@
             flex-direction: column;
             justify-content: center;
         }
-        .columnTwo{
-            width: 1px;
-        }
     }
-
-    
-    clear: left;
-    padding-inline: 18%;
-    padding-block: 6rem;
+    margin: auto;
+    margin-inline: max(15vw, 2rem);
+    padding-block: max(12vw, 2rem);
     .projectContainer{
         display: flex;
         justify-content: space-between;
@@ -32,8 +27,6 @@
                 margin: 0%;
                 margin-bottom: 5%;
                 display: block;
-                border-radius: .25rem;
-                border: 1px solid variables.$tealColor;
             }
             div{
                 padding-bottom: 2rem;
@@ -59,18 +52,23 @@
                 margin-top: 10%;
                 display: flex;
                 .buttonOne{
+                    width: max(10vw, 160px);
                     a{
                         @include mixins.button(.5rem,1rem);
+                        
                     }
                 }
                 .buttonTwo{
+                    width: max(10vw, 160px);
                     a{
                         @include mixins.buttonTwo(.5rem,1rem);
-
                     }
                 }
             }
             
+        }
+        .columnTwo img{
+            width: max(30vw, 350px);
         }
         
     }

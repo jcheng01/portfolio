@@ -39,6 +39,12 @@ function scrollContact() {
   });
 }
 
+window.addEventListener('scroll', function () {
+  let navbar = document.querySelector(".navBar");
+  navbar.classList.toggle('.sticky', window.scrollY > 0);
+})
+
+
 let tabs = document.querySelectorAll(".tabs h3");
 let tabContent = document.querySelectorAll(".tabContent div");
 

@@ -7,9 +7,6 @@
   @include mixins.breakpoint(phone){
     padding-block: 2rem;
     padding-inline: 2rem; 
-    .rowOne{
-      font-size: 100%;
-    }
     .rowTwo{
       display: flex;
       flex-direction: column;
@@ -23,17 +20,30 @@
         text-align: center;
       }
     }
-    .imgAbout{
-      width: 175px;
+  }
+  max-width: 75%;
+  margin: 0 auto;
+  padding-block: max(12vw);
+  
+  .rowOne{
+    display: flex;
+    align-items: center;
+    *{
+      padding-left: max(2.7vw);
+    }
+    hr{
+      width: max(17vw);
+      margin: 0;
+      margin-left: max(20px);
     }
   }
-  padding-inline: 18%;
-  padding-block: 8rem;
   .rowTwo{
     display: flex;
+    justify-content: space-around;
     .aboutDiscription{
       @include mixins.description;
-      max-width: 540px;
+      word-spacing: 2px;
+      max-width: 30rem;
       ul{
         columns: 2;
         list-style-type: circle;
@@ -43,21 +53,24 @@
         }
       }
     }
-    .imgAbout{
-      max-width: auto;
-      margin: 5%;
-      padding: 9%;
+    .portrait{
+      padding-top: max(20px);
+      padding-left: max(2vw, 3rem);
+
+      .imgAbout{
+      max-width: 300rem;
+      padding: max(2vh, 2px);
       border: solid 2px variables.$tealColor;
-      border-radius: 1rem;
+      border-radius: .5rem;
       transition-duration: 0.5s;
       &:hover{
-        border-width: 5px;
+        border-width: 4px;
         background-color: #00d1b221;
       }
     }
+    }
+    
   }
   
 }
-.portrait{
-  margin-left: 90px;
-}
+
