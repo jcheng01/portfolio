@@ -63,6 +63,9 @@
       border: solid 2px variables.$tealColor;
       border-radius: .5rem;
       transition-duration: 0.5s;
+      -webkit-box-shadow:0px 0px 217px 0px rgba(21,244,237,0.29);
+      -moz-box-shadow: 0px 0px 217px 0px rgba(21,244,237,0.29);
+      box-shadow: 0px 0px 217px 0px rgba(21,244,237,0.29);
       &:hover{
         border-width: 4px;
         background-color: #00d1b221;

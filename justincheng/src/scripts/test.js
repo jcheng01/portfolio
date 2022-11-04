@@ -3,7 +3,7 @@ function scrollAbout() {
   // This ends the block to the window 
   // bottom and also aligns the view to the center 
   e.scrollIntoView({
-    block: 'end',
+    block: 'start',
     behavior: 'smooth',
     inline: 'center'
   });
@@ -23,7 +23,7 @@ function scrollProjects() {
   // This ends the block to the window 
   // bottom and also aligns the view to the center 
   e.scrollIntoView({
-    block: 'end',
+    block: 'start',
     behavior: 'smooth',
     inline: 'center'
   });

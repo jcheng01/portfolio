@@ -12,13 +12,13 @@ h2 {
   font-weight: normal;
 }
 h2 span {
-  color: #00D1B2;
+  color: #15F4EE;
   font-size: 70%;
   font-weight: lighter;
 }
 
 hr {
-  border: 1px solid #00D1B2;
+  border: 1px solid #15F4EE;
   border-radius: 0.25rem;
 }
 
@@ -61,10 +61,10 @@ body {
   transition-duration: 0.7s;
 }
 .navBarEnd .navItem:hover {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .navBarEnd .navItem span {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 @media (max-width: 699px) {
   .navBarEnd .navItem {
@@ -72,7 +72,7 @@ body {
   }
 }
 .navBarEnd .resumeButton {
-  color: #00D1B2;
+  color: #15F4EE;
   border-style: solid;
   border-radius: 0.5em;
   padding: 0.6rem 1rem;
@@ -123,10 +123,10 @@ body {
   text-decoration: none;
 }
 .overlay.mobileNav .hamburgerItem:hover {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .overlay.mobileNav .hamburgerItem span {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 
 .mobileNav {
@@ -160,7 +160,7 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 .hero div {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .hero h1 {
   font-size: clamp(1rem, 12vw + 1rem, 4.5rem);
@@ -183,7 +183,7 @@ body {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .hero h6 a:after {
   content: "";
@@ -193,7 +193,7 @@ body {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #00D1B2;
+  background-color: #15F4EE;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
@@ -202,10 +202,10 @@ body {
   transform-origin: bottom left;
 }
 .hero h6 span {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .hero .resumeButton {
-  color: #00D1B2;
+  color: #15F4EE;
   border-style: solid;
   border-radius: 0.5em;
   padding: 1.2rem 5rem;
@@ -279,7 +279,7 @@ body {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .about .rowTwo .aboutDiscription a:after {
   content: "";
@@ -289,7 +289,7 @@ body {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #00D1B2;
+  background-color: #15F4EE;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
@@ -298,12 +298,12 @@ body {
   transform-origin: bottom left;
 }
 .about .rowTwo .aboutDiscription span {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .about .rowTwo .aboutDiscription ul {
   columns: 2;
   list-style-type: circle;
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .about .rowTwo .aboutDiscription ul span {
   color: #717f9c;
@@ -315,9 +315,12 @@ body {
 .about .rowTwo .portrait .imgAbout {
   max-width: 300rem;
   padding: max(2vh, 2px);
-  border: solid 2px #00D1B2;
+  border: solid 2px #15F4EE;
   border-radius: 0.5rem;
   transition-duration: 0.5s;
+  -webkit-box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
+  -moz-box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
+  box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
 }
 .about .rowTwo .portrait .imgAbout:hover {
   border-width: 4px;
@@ -379,7 +382,7 @@ hr {
 }
 .tabs h3:hover {
   background-color: #112240;
-  color: #00D1B2;
+  color: #15F4EE;
   transition-duration: 0.5s;
   border: left 5px;
 }
@@ -396,7 +399,7 @@ hr {
   margin: 0;
 }
 .tabContent h4 span {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 
 .tabContent h5 {
@@ -413,7 +416,7 @@ hr {
 .tabContent ul li {
   font-size: 0.85rem;
   font-family: "Open Sans", sans-serif;
-  color: #00D1B2;
+  color: #15F4EE;
   list-style: circle;
   word-spacing: 1px;
   line-height: 25px;
@@ -432,8 +435,8 @@ hr {
 
 .tabs .active {
   background-color: #112240;
-  color: #00D1B2;
-  border-left: 2px solid #00D1B2;
+  color: #15F4EE;
+  border-left: 2px solid #15F4EE;
 }
 
 .contact {
@@ -468,7 +471,7 @@ hr {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .contact p a:after {
   content: "";
@@ -478,7 +481,7 @@ hr {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #00D1B2;
+  background-color: #15F4EE;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
@@ -487,10 +490,10 @@ hr {
   transform-origin: bottom left;
 }
 .contact p span {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .contact .mailButton {
-  color: #00D1B2;
+  color: #15F4EE;
   border-style: solid;
   border-radius: 0.5em;
   padding: 1rem 2rem;
@@ -552,13 +555,13 @@ hr {
   box-shadow: 2px 2px 2px #020c1b;
   box-sizing: border-box;
   border-radius: 0.5rem;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 .projects .projectContainer .columnOne .description a {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .projects .projectContainer .columnOne .description a:after {
   content: "";
@@ -568,7 +571,7 @@ hr {
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #00D1B2;
+  background-color: #15F4EE;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
@@ -577,10 +580,12 @@ hr {
   transform-origin: bottom left;
 }
 .projects .projectContainer .columnOne .description span {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .projects .projectContainer .columnOne .description:hover {
-  box-shadow: 5px 5px 5px #020c1b;
+  -webkit-box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
+  -moz-box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
+  box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
 }
 .projects .projectContainer .columnOne .buttonRow {
   margin-top: 10%;
@@ -590,7 +595,7 @@ hr {
   width: max(10vw, 160px);
 }
 .projects .projectContainer .columnOne .buttonRow .buttonOne a {
-  color: #00D1B2;
+  color: #15F4EE;
   border-style: solid;
   border-radius: 0.5em;
   padding: 0.5rem 1rem;
@@ -612,7 +617,7 @@ hr {
   font-family: "Roboto Mono", monospace;
 }
 .projects .projectContainer .columnOne .buttonRow .buttonTwo a:hover {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 .projects .projectContainer .columnTwo img {
   width: max(30vw, 350px);
@@ -637,7 +642,7 @@ footer a {
   transition-duration: 0.5s;
 }
 footer a:hover {
-  color: #00D1B2;
+  color: #15F4EE;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
