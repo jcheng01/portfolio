@@ -525,7 +525,7 @@ hr {
 .projects .projectContainer {
   display: flex;
   justify-content: space-between;
-  padding-block: 5rem;
+  padding-top: 2rem;
 }
 .projects .projectContainer .columnOne {
   margin-right: 2rem;
@@ -583,9 +583,52 @@ hr {
   color: #15F4EE;
 }
 .projects .projectContainer .columnOne .description:hover {
-  -webkit-box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
-  -moz-box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
-  box-shadow: 0px 0px 217px 0px rgba(21, 244, 237, 0.29);
+  -webkit-box-shadow: 0px 0px 300px 30px rgba(234, 178, 8, 0.7);
+  -moz-box-shadow: 0px 0px 300px 30px rgba(234, 178, 8, 0.7);
+  box-shadow: 0px 0px 300px 30px rgba(234, 178, 8, 0.7);
+}
+.projects .projectContainer .columnOne .descriptiontwo {
+  font-size: 1.1rem;
+  font-family: "lato";
+  font-weight: normal;
+  color: #717f9c;
+  line-height: 1.5;
+  background-color: #112240;
+  padding: 5%;
+  box-shadow: 2px 2px 2px #020c1b;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  transition-duration: 1s;
+}
+.projects .projectContainer .columnOne .descriptiontwo a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #15F4EE;
+}
+.projects .projectContainer .columnOne .descriptiontwo a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #15F4EE;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.projects .projectContainer .columnOne .descriptiontwo a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.projects .projectContainer .columnOne .descriptiontwo span {
+  color: #15F4EE;
+}
+.projects .projectContainer .columnOne .descriptiontwo:hover {
+  -webkit-box-shadow: 0px 0px 300px 30px rgba(21, 244, 237, 0.7);
+  -moz-box-shadow: 0px 0px 300px 30px rgba(21, 244, 237, 0.7);
+  box-shadow: 0px 0px 300px 30px rgba(21, 244, 237, 0.7);
 }
 .projects .projectContainer .columnOne .buttonRow {
   margin-top: 10%;

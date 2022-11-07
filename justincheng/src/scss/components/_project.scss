@@ -19,7 +19,7 @@
     .projectContainer{
         display: flex;
         justify-content: space-between;
-        padding-block: 5rem;
+        padding-top: 2rem;
         .columnOne{
             margin-right: 2rem;
             align-items: center;
@@ -45,9 +45,23 @@
                 border-radius: .5rem;
                 transition-duration: 1s;
                 &:hover{
-                    -webkit-box-shadow:0px 0px 217px 0px rgba(21,244,237,0.29);
-                    -moz-box-shadow: 0px 0px 217px 0px rgba(21,244,237,0.29);
-                    box-shadow: 0px 0px 217px 0px rgba(21,244,237,0.29);
+                    -webkit-box-shadow:0px 0px 300px 30px rgba(234,178,8,0.7);
+                    -moz-box-shadow: 0px 0px 300px 30px rgba(234,178,8,0.7);
+                    box-shadow: 0px 0px 300px 30px rgba(234,178,8,0.7);
+                }
+            }
+            .descriptiontwo{
+                @include mixins.description;
+                background-color: #112240;
+                padding: 5%;
+                box-shadow: 2px 2px 2px #020c1b;;
+                box-sizing: border-box;
+                border-radius: .5rem;
+                transition-duration: 1s;
+                &:hover{
+                    -webkit-box-shadow:0px 0px 300px 30px rgba(21,244,237,0.7);
+                    -moz-box-shadow: 0px 0px 300px 30px rgba(21,244,237,0.7);
+                    box-shadow: 0px 0px 300px 30px rgba(21,244,237,0.7);
                 }
             }
             .buttonRow{
