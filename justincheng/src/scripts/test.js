@@ -47,9 +47,6 @@ window.addEventListener('scroll', function () {
 
 let tabs = document.querySelectorAll(".tabs h3");
 let tabContent = document.querySelectorAll(".tabContent div");
-
-
-
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     tabContent.forEach((content) => {
@@ -73,11 +70,14 @@ hamburger.addEventListener('click', () => {
     hamburgerItem.classList.toggle('is-active');
   });
 }, false);
+// hamburgerItem.array.forEach(element => {
+//   hamburgerItem.addEventListener('click', () => {
+//     hamburger.classList.toggle('is-active');
+//   })
+// })
 
-hamburgerItem.addEventListener('click', () => {
-  hamburger.classList.toggle('is-active');
 
-}, false);
+
 
 
 
