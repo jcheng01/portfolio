@@ -9,7 +9,7 @@
     @include mixins.breakpoint(phone){
        padding: 0;
        margin: 0%;
-       padding-block: 2%;
+       padding-block: 15%;
     }
     h1{
         color: variables.$lightGrey;

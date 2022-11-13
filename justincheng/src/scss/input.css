@@ -156,14 +156,17 @@ body {
 .hero {
   padding-inline: max(15vw, 2rem);
   padding-block: max(6.5vw, 2rem);
-  color: #717f9c;
+  color: #8892b0;
   font-family: "Roboto Mono", monospace;
 }
 .hero div {
   color: #15F4EE;
 }
+.hero .hi {
+  font-size: clamp(0.5rem, 2.5vw + 0.1rem, 1.1rem);
+}
 .hero h1 {
-  font-size: clamp(1rem, 12vw + 1rem, 4.5rem);
+  font-size: clamp(2rem, 4.5vw + 1rem, 6rem);
   margin: 0;
   padding-top: 1.25rem;
 }
@@ -174,10 +177,11 @@ body {
   font-size: 1.1rem;
   font-family: "lato";
   font-weight: normal;
-  color: #717f9c;
+  color: #8892b0;
   line-height: 1.5;
   width: 53%;
   padding-bottom: 2rem;
+  font-size: clamp(0.1rem, 1.5vw + 1rem, 1rem);
 }
 .hero h6 a {
   text-decoration: none;
@@ -229,7 +233,7 @@ body {
 }
 
 .about {
-  max-width: 75%;
+  padding-inline: 18vw;
   margin: 0 auto;
   padding-block: 12vw;
 }
@@ -242,23 +246,24 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .about .aboutDiscription {
+    max-width: 430px;
+  }
   .about .aboutDiscription p {
-    font-size: 70%;
+    font-size: 85%;
   }
   .about .aboutDiscription ul {
-    font-size: 70%;
+    font-size: 85%;
     text-align: center;
   }
 }
 .about .rowOne {
   display: flex;
+  justify-content: left;
   align-items: center;
 }
-.about .rowOne * {
-  padding-left: 2.7vw;
-}
 .about .rowOne hr {
-  width: 17vw;
+  width: max(10px, 1rem, 45%);
   margin: 0;
   margin-left: 20px;
 }
@@ -270,10 +275,12 @@ body {
   font-size: 1.1rem;
   font-family: "lato";
   font-weight: normal;
-  color: #717f9c;
+  color: #8892b0;
   line-height: 1.5;
+  font-size: clamp(1.1rem, 1vw + 0.2rem, 3.5rem);
+  padding-right: 20px;
   word-spacing: 2px;
-  max-width: 30rem;
+  max-width: 40rem;
 }
 .about .rowTwo .aboutDiscription a {
   text-decoration: none;
@@ -306,15 +313,23 @@ body {
   color: #15F4EE;
 }
 .about .rowTwo .aboutDiscription ul span {
-  color: #717f9c;
+  color: #8892b0;
 }
 .about .rowTwo .portrait {
-  padding-top: 20px;
-  padding-left: max(2vw, 3rem);
+  padding: max(2vw, 2px);
+  width: auto;
+}
+@media (max-width: 699px) {
+  .about .rowTwo .portrait {
+    display: grid;
+    place-content: center;
+  }
 }
 .about .rowTwo .portrait .imgAbout {
-  max-width: 300rem;
-  padding: max(2vh, 2px);
+  width: 100%;
+  max-width: 200px;
+  min-width: 120px;
+  padding: max(1vh, 10px);
   border: solid 2px #15F4EE;
   border-radius: 0.5rem;
   transition-duration: 0.5s;
@@ -374,7 +389,7 @@ hr {
   padding: 1rem 1.5rem;
   font-weight: normal;
   font-size: 0.7rem;
-  color: #717f9c;
+  color: #8892b0;
   margin: 0;
   max-width: 200px;
   display: grid;
@@ -403,7 +418,7 @@ hr {
 }
 
 .tabContent h5 {
-  color: #717f9c;
+  color: #8892b0;
   font-size: 0.8rem;
   padding-left: 1.8rem;
   font-family: "Roboto Mono", monospace;
@@ -411,7 +426,7 @@ hr {
 
 .tabContent ul {
   text-align: justify;
-  color: #717f9c;
+  color: #8892b0;
 }
 .tabContent ul li {
   font-size: 0.85rem;
@@ -422,7 +437,7 @@ hr {
   line-height: 25px;
 }
 .tabContent ul li span {
-  color: #717f9c;
+  color: #8892b0;
 }
 
 .tabContent div {
@@ -448,7 +463,7 @@ hr {
   .contact {
     padding: 0;
     margin: 0%;
-    padding-block: 2%;
+    padding-block: 15%;
   }
 }
 .contact h1 {
@@ -459,7 +474,7 @@ hr {
   font-size: 1.1rem;
   font-family: "lato";
   font-weight: normal;
-  color: #717f9c;
+  color: #8892b0;
   line-height: 1.5;
   display: block;
   margin-left: auto;
@@ -521,6 +536,9 @@ hr {
     flex-direction: column;
     justify-content: center;
   }
+  .projects .columnTwo img {
+    min-width: 20rem;
+  }
 }
 .projects .projectContainer {
   display: flex;
@@ -548,7 +566,7 @@ hr {
   font-size: 1.1rem;
   font-family: "lato";
   font-weight: normal;
-  color: #717f9c;
+  color: #8892b0;
   line-height: 1.5;
   background-color: #112240;
   padding: 5%;
@@ -591,7 +609,7 @@ hr {
   font-size: 1.1rem;
   font-family: "lato";
   font-weight: normal;
-  color: #717f9c;
+  color: #8892b0;
   line-height: 1.5;
   background-color: #112240;
   padding: 5%;
@@ -653,7 +671,7 @@ hr {
   width: max(10vw, 160px);
 }
 .projects .projectContainer .columnOne .buttonRow .buttonTwo a {
-  color: #717f9c;
+  color: #8892b0;
   padding: 0.5rem 1rem;
   transition-duration: 0.5s;
   text-decoration: none;
@@ -662,8 +680,12 @@ hr {
 .projects .projectContainer .columnOne .buttonRow .buttonTwo a:hover {
   color: #15F4EE;
 }
+.projects .projectContainer .columnTwo {
+  display: grid;
+  place-content: center;
+}
 .projects .projectContainer .columnTwo img {
-  width: max(30vw, 350px);
+  width: min(400px, 30vw);
 }
 
 footer {
@@ -681,7 +703,7 @@ footer {
 footer a {
   text-decoration: none;
   font-size: 1.1rem;
-  color: #717f9c;
+  color: #8892b0;
   transition-duration: 0.5s;
 }
 footer a:hover {

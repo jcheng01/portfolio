@@ -12,27 +12,27 @@
       flex-direction: column;
     }
     .aboutDiscription{
+      max-width: 430px;
       p{
-        font-size: 70%;
+        font-size: 85%;
       }
       ul{
-        font-size: 70%;
+        font-size: 85%;
         text-align: center;
       }
     }
   }
-  max-width: 75%;
+  // max-width: 60%;
+  padding-inline: max(18vw);
   margin: 0 auto;
   padding-block: max(12vw);
   
   .rowOne{
     display: flex;
+    justify-content: left;
     align-items: center;
-    *{
-      padding-left: max(2.7vw);
-    }
     hr{
-      width: max(17vw);
+      width: max(10px,1rem, 45%);
       margin: 0;
       margin-left: max(20px);
     }
@@ -42,8 +42,11 @@
     justify-content: space-around;
     .aboutDiscription{
       @include mixins.description;
+      font-size: clamp(1.1rem, 1vw + .2rem, 3.5rem);
+      padding-right: (20px);
       word-spacing: 2px;
-      max-width: 30rem;
+      max-width: 40rem;
+     
       ul{
         columns: 2;
         list-style-type: circle;
@@ -54,12 +57,19 @@
       }
     }
     .portrait{
-      padding-top: max(20px);
-      padding-left: max(2vw, 3rem);
-
+      padding: max(2vw, 2px);
+      width: auto;
+      @include mixins.breakpoint(phone){
+        display: grid;
+        place-content: center;
+      }
       .imgAbout{
-      max-width: 300rem;
-      padding: max(2vh, 2px);
+      
+      width: 100%;
+      max-width: 200px;
+      min-width: 120px;
+      
+      padding: max(1vh, 10px);
       border: solid 2px variables.$tealColor;
       border-radius: .5rem;
       transition-duration: 0.5s;

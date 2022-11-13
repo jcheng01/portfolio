@@ -3,6 +3,7 @@
 
 
 .experience{
+  
   @include mixins.breakpoint(phone){
     padding-block: 2rem;
     padding-inline: 2rem; 
@@ -24,9 +25,7 @@
  
 }
 hr{
-  
-  margin-block: 3rem;
-  
+  margin-block: 3rem
 }
 .container{
   box-sizing: border-box;
